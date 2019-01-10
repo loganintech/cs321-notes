@@ -56,3 +56,31 @@ Def:
 
 given M = (Q, E, S, s, F)
 L(M) = { w in E* | S*(s, w) in F}
+
+"all strings that reach an accept state, when starting from start state"
+```
+
+Let's prove correctness of the DFA from earlier
+
+![](https://i.imgur.com/CxpuY0l.png)
+
+Note: S(qi, b) = q(2i+b) mod 3
+
+State 0: S(q0, 1) == (q1 = q(2(0) + 1) mod 3 = q(1 mod 3) = q(1))
+
+```
+Claim: after reading input x, DFA is in state q(bin(x) mod 3)
+
+Proof: Bg induction on (length of) x
+
+Base case: x = E
+
+S*(q0, e) = q0 = qbin(e) mod 3
+
+Induction Step
+Suppose 1H true for X
+let `b e E`
+S*(q0, xb)
+
+extend transition function <-- S*(q0, xb) = S(S*(q0, x), b) = S(qbin(x) mod 3, b) (1H)
+```
