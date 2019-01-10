@@ -1,3 +1,13 @@
+## Notes
+
+* Requires O(1) memory regardless of input string size
+* Has finite set of states and finite set of transitions
+* Convention:
+  * e (epsilon) is the `empty string`. Sometimes also `labda`
+
+
+
+
 ## Ex: Design a DFA
 { w E {a, b}* | w contains `aa` substring }
 
@@ -90,4 +100,14 @@ previous note: S(qi, b) = q2i+b mod 3
  =q(bin(xb) mod 3) -> from the definition of binary
 
 So, the claim is true somehow. Also, for longer strings xb
+Concluding correctness of the dfa
+L(M) = {x in {0, 1}* | X*(q, x) in F}
+     = {x ... | q(bin(x)mod3) in F}
+     = {x ... | q0}
+     = {x ... | bin(x) mod 3 = 0}
 ```
+
+```
+Real Life Example:
+
+Vending Machine!
