@@ -83,4 +83,11 @@ let `b e E`
 S*(q0, xb)
 
 extend transition function <-- S*(q0, xb) = S(S*(q0, x), b) = S(qbin(x) mod 3, b) (1H)
+
+previous note: S(qi, b) = q2i+b mod 3
+ =q(2(bin(x) mod 3 + b)) mod 3
+ =q(2(bin(x) + b)) mod 3
+ =q(bin(xb) mod 3) -> from the definition of binary
+
+So, the claim is true somehow. Also, for longer strings xb
 ```
