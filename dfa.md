@@ -46,3 +46,13 @@ Ex:
   = S(S(S(q, a), b), c)
 ```
 
+Define in terms of S
+S*(q, E) = q
+S*(q, xb) = S(S*(q, x), b) for (b in E)
+
+
+```
+Def:
+
+given M = (Q, E, S, s, F)
+L(M) = { w in E* | S*(s, w) in F}
