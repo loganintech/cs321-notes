@@ -207,3 +207,7 @@ L(M`) = {w | S*(s1, w) E F`}
       = {w | w E L(M1) and w E L(M2) }
       = Lp(M1) intersect L(M2) ==> L(M1) intersect L(M2) is regular
 ```
+
+------
+
+![](https://i.imgur.com/l1BstTS_d.jpg?maxwidth=1024)
