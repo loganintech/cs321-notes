@@ -55,3 +55,20 @@ An equivalent yet larger DFA:
 ![](https://i.imgur.com/PQKWx6t.png)
 
 ## automata --> automaton is singular
+
+
+Small refresh:
+
+```
+M = (Q, E, sigma, s, F);
+where Q is set of state, E is alphabets, signma is transition fn, s is start state, and F is final set of states.
+```
+
+
+---
+
+In state p and read character 'c' S(p, c) is the set of possible states to transition to.
+
+![](https://i.imgur.com/luqHKqn.png)
+
+Signifies: At least 2 a's followed by at least two b's

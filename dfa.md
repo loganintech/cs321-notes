@@ -124,7 +124,6 @@ Ex:
 {w{0, 1}* | w contains 111 as substring}
 ```
 
-
 Nonregular:
 
 {w e {0, 1}* | w has more 0s then 1s}
